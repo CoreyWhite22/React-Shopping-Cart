@@ -124,16 +124,16 @@ const Products = (props) => {
   let list = items.map((item, index) => {
     let imgSrc;
     switch (item.name.trim().toLowerCase()) {
-      case "apples_:":
+      case "apples":
         imgSrc = "apple.png";
         break;
-      case "oranges:":
+      case "oranges":
         imgSrc = "orange.png";
         break;
-      case "beans__:":
+      case "beans":
         imgSrc = "beans.png";
         break;
-      case "cabbage:":
+      case "cabbage":
         imgSrc = "cabbage.png";
         break;
       default:
@@ -162,7 +162,7 @@ const Products = (props) => {
           </Accordion.Toggle>
           {/* Add a delete button next to the item name */}
           <Button variant="danger" onClick={() => deleteCartItem(index)} style={{ marginLeft: '10px' }}>
-            X
+            Delete
           </Button>
         </Card.Header>
         <Accordion.Collapse eventKey={1 + index}>
